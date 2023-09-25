@@ -1,0 +1,239 @@
+/* BACKGROUND IMAGE FOR ALL PAGES */
+body {
+    background-image: url('https://th-thumbnailer.cdn-si-edu.com/TTuRp1rdse2gguzxn4A_VivnLHk=/fit-in/1600x0/filters:focal(1120x731:1121x732)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/ff/ef/ffef28ee-f5d8-493a-8208-654c9fbc8f22/gettyimages-1229458426_web.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 150px;
+}
+
+/* ELEMENT SELECTORS */
+
+/* Style the <h1> element */
+h1 {
+    text-align: center;
+    color: lime;
+    margin-top: 3%;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+
+/* for h3 headers (this is the parent) */
+
+h3 {
+    color: lime; 
+    border: 2px solid #0446fc;
+    padding: 15px;
+    background-color: rgba(0, 3, 5, .5);
+    border-radius: 10px;
+    max-width: max-content;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    font-family: Facon;
+    
+}
+
+/* Target only the h3 within the specific container */
+.container h3 {
+    /* for the targeted h3 */
+    color: lime; 
+    font-size: 24px; 
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+    
+}
+
+
+
+.champion-name {
+    font-family: Facon;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+h1 {  /* for top header "My Favorite Champion" */
+    font-family: Facon;
+}
+
+h4 {
+    font-family: Facon;
+    color: lime;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    font-size: xx-larg;
+}
+/* for all <p> elements */
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: Gold;
+    border: 2px solid #18f105;
+    padding: 20px;
+    background-color: rgba(0, 3, 5, .7);
+    border-radius: 10px;
+    text-align: center;
+    max-width: fit-content;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Add a border to the image */
+.bordered-image {
+    border: 2px solid rgb(0, 255, 13); /* Add a border to the image */
+    border-radius: 10px; /* Add rounded corners to the image */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: 500px; /* Maintain the aspect ratio while adjusting the width */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* for .bordered-container with class1 */
+.bordered-container.class1 {
+    border: 2px solid #0848f7;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(0, 5, 1, 0.7);
+    max-width: 700px;
+    height: 24px;
+    margin-bottom: 20px; /*creates space between the bottom of the border and the h3 header */
+;
+}
+
+.bordered-container.class1 a {
+    color: chartreuse; 
+    text-decoration: underline;
+    margin-right:30px;
+    margin-left:30px;
+    
+}
+
+.bordered-container.class1 a:hover {
+    color: rgb(247, 77, 10);
+}
+
+/* for special paragraph */
+.special-paragraph {
+    font-size: 20px;
+    color: goldenrod;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* for user input container */
+#user-input-container {
+    text-align: center;
+}
+
+#user-input-container input[type="text"] {
+    width: 200px;
+    height: 30px; /* Adjusted the height */
+    margin: 5px; /* Added margin for spacing */
+    text-align: center; /* input box default text */
+    margin-top: 30px;
+}
+
+/* hover effect to the submit button with a color transition */
+#user-input-container input[type="submit"] {
+    background-color: #1505f7; /* Set the initial background color */
+    color: #FFF; /* Set the initial text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition properties */
+    
+}
+
+#user-input-container input[type="submit"]:hover {
+    background-color: #07f31a; /* Change the background color on hover */
+    color: #0a0a0a; /* Change the text color on hover */
+    /* Add any other hover styles you want here */
+}
+
+/* Center everything on the page */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Center the user input-container */
+.user-input-container {
+    display:inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* Adjusted margin for spacing */
+}
+
+/* Center the submit button in the user input container */
+.user-input-container input[type="submit"] {
+    margin-top: 10px; /* Adjusted margin for spacing */
+}
+
+
+
+/* for the table itself using ID selector */
+#my-table {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/* Style for table headers (th) within the table with the ID 'my-table' */
+#my-table th {
+    background-color: rgba(10, 235, 55, 0.7);
+    color: #0a0101;
+    padding: 10px;
+    border: 2px solid #0a0a09;
+}
+
+/* Style for table data cells (td) within the table with the ID 'my-table' */
+#my-table td {
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: rgba(223, 219, 5, 0.7);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+/* Class container for Champion Abilities unorded list */
+
+/* unordered list */
+
+.ability-list {
+    border: 2px solid rgb(0, 255, 0); /*  border around the entire list */
+    width:50%;  /* adjust the space inside the border */
+    margin: 0 auto; /* Center the list horizontally */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: rgba(0, 3, 5, .5); /* Transparent background */
+    color: gold;
+    text-align: left; /* Center-align the list items */
+    font-size: 20px;
+    list-style: disc inside; /*to show bullets list style to disc and position it inside the list item */    
+}
+
+
+/* for list items (li) within the unordered list */
+.ability-list li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px; /* padding to create space within each list item */
+    text-align: left;
+    display:list-item;
+    color: gold;
+}
